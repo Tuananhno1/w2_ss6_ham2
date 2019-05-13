@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+function nhapBanKinh() {
+    let r = prompt('Nhap vao ban kinh:')
+    return r;
+}
+function tinhDienTich(r) {
+    let S = 3.14*r*r;
+    return S;
+}
+function tinhChuVi(r) {
+    let C = 2*3.14*r;
+    return C;
+}
+let dienTich = tinhDienTich(nhapBanKinh());
+let chuVi = tinhChuVi(nhapBanKinh());
+document.write('Dien tich = ' + dienTich + '<br>');
+document.write('Chu vi = ' + chuVi);
+</script>
+</body>
+</html>

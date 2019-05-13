@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body >
+  <script>
+          let soThuNhat = prompt('Nhap so dau tien:');
+          let soThuHai = prompt('Nhap so thu hai:');
+          let soThuBa = prompt('Nhap so thu ba:');
+      function kiemTra(a,b,c) {
+          let min = a;
+          if(a>b && a>c){
+              if(b>c){
+                  min = c;
+              } else {
+                  min = b;
+              }
+          }
+          return min;
+      }
+      let soNhoNhat = kiemTra(soThuNhat,soThuHai,soThuBa);
+      alert(soNhoNhat);
+  </script>
+</body>
+</html>

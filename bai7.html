@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+  <script>
+      let a = parseInt(prompt('Nhap so thu nhat:'));
+      let b = parseInt(prompt('Nhap co thu hai:'));
+      function doiThuTu() {
+          doiCho = a;
+          a = b;
+          b = doiCho;
+          // return doiCho;
+      }
+      let x = doiThuTu(a,b);
+      alert('sau khi doi cho thi a va b se la: ' + a + ' va ' +  b);
+  </script>
+</body>
+</html>

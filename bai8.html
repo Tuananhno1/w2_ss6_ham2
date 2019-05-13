@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<h1>Bài 8</h1>
+<p>Đảo ngược mảng số nguyên</p>
+<input id="dauvao" type="number" placeholder="Nhập mảng số nguyên"/>
+<button type="button" onclick="daoPhanTu()">Đảo ngược mảng</button>
+<br>
+<label id="ketqua"></label>
+<script>
+    function daoPhanTu() {
+        let dauVao = document.getElementById("dauvao").value;
+        let ketQua = dauVao.split("").reverse().join(",");
+        document.getElementById("ketqua").innerHTML = "Kết quả đảo ngược là: " + ketQua;
+    }
+</script>
+
+</body>
+</html>

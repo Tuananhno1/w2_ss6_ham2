@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body onload="main()">
+   <script>
+       function nhapDauVao() {
+          dauVao = prompt('Nhap dau vao:');
+          return dauVao;
+       }
+       function kiemTra(x) {
+           return parseInt(x);
+       }
+       function xetDieuKien(check) {
+           if(check){
+               alert('Day la so')
+           } else{
+               alert('Khong phai so')
+           }
+       }
+       function main() {
+           x = nhapDauVao();
+           y = kiemTra(x);
+           xetDieuKien(y);
+       }
+   </script>
+</body>
+</html>
